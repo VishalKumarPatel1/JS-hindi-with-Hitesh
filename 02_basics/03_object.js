@@ -20,4 +20,19 @@ user.email = 'rahulpatel@gmail.com';
 Object.freeze(user);
 user.email = "jahnvi@gmail.com";
 
-console.log(user)
+user.greeting = function(){
+    console.log('Hello Javascript');
+    
+}
+
+user.greetingTwo = function(){
+    console.log(`Hello ${this.name}`);
+    
+}
+
+
+console.log(user.greeting());
+console.log(user.greetingTwo());
+
+
+
