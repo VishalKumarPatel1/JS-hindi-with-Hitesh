@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Last Part</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+  <ul class="languages">
+    <li>Javascript</li>
+  </ul>
+</body>
+
+
+<script>
+
+//add new Element
+
+  function addLanguage(langName){
+    const li = document.createElement('li');
+    li.innerHTML = `${langName}`;
+    document.querySelector('.languages').appendChild(li);
+  }
+  addLanguage('Python');
+  addLanguage('Java');
+  addLanguage('C++');
+
+
+  //Optimized Approch
+
+  function addLanguageOptimized(langName){
+    const li = document.createElement('li');
+    li.appendChild(document.createTextNode(langName));
+    document.querySelector('.languages').append(li);
+  }
+  addLanguageOptimized('C#');
+  addLanguageOptimized('PHP');
+
+
+  //Edit
+
+  const secondLanguage = document.querySelector('.languages li:nth-child(2)');
+
+  const newLanguage = document.createElement('li');
+  newLanguage.textContent = 'Ruby';
+  secondLanguage.replaceWith(newLanguage);
+
+  //2nd method 
+
+  const firstLanguage = document.querySelector('.languages li:first-child');
+  firstLanguage.outerHTML = '<li>TypeScript</li>';
+
+  //Remove
+  const removeLanguage = document.querySelector('.languages li:last-child');
+  removeLanguage.remove();
+</script>
+</html>
