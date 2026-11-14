@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Scheme Switcher</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #fff;
+        color: #000;
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        padding: 10px;
+        background-color: #eee;
+        border: 2px solid #ccc;
+      }
+
+      nav button {
+        padding: 10px 25px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .container {
+        text-align: center;
+        margin-top: 110px;
+        padding: 0 15px;
+      }
+
+      h1 {
+        font-size: 24px;
+        margin-bottom: 18px;
+      }
+
+      .canvas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+        max-width: 335px;
+        margin: 0 auto 25px;
+      }
+
+      .button {
+        width: 108px;
+        height: 108px;
+        border: 2px solid black;
+        cursor: pointer;
+      }
+
+      #grey {
+        background-color: grey;
+      }
+
+      #white {
+        background-color: white;
+      }
+
+      #blue {
+        background-color: blue;
+      }
+
+      #yellow {
+        background-color: yellow;
+      }
+      #red {
+        background-color: red;
+      }
+
+      h2 {
+        font-size: 24px;
+        line-height: 1.25;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <a>Home</a>
+      <a
+        style="text-decoration: none"
+        href="https://www.youtube.com/watch?v=Hr5iLG7sUa0&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        YouTube Channel
+      </a>
+    </nav>
+
+    <div class="container">
+      <h1>Color Scheme Switcher</h1>
+
+      <div class="canvas">
+        <span class="button" id="grey"></span>
+        <span class="button" id="white"></span>
+        <span class="button" id="blue"></span>
+        <span class="button" id="yellow"></span>
+        <span class="button" id="red"></span>
+      </div>
+
+      <h2>
+        Try clicking on one of the colors above
+        <br />
+        to change the background color of this page!
+      </h2>
+    </div>
+
+    <script link src="one.js"></script>
+      
+    </script>
+  </body>
+</html>
